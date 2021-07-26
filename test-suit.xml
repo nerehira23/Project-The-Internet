@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Trabajo Final en paralelo" thread-count="2" parallel="tests" >
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="login.LoginPageTest"></class>
+            <class name="elements.AddElementTest"></class>
+            <class name="elements.DeleteElementTest"></class>
+            <class name="checkboxes.CheckTest"></class>
+            <class name="checkboxes.UncheckTest"></class>
+        </classes>
+    </test>
+    <test name="FirefoxTest">
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="login.LoginPageTest"></class>
+            <class name="elements.AddElementTest"></class>
+            <class name="elements.DeleteElementTest"></class>
+            <class name="checkboxes.CheckTest"></class>
+            <class name="checkboxes.UncheckTest"></class>
+        </classes>
+    </test>
+</suite>
